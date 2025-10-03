@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<launch>
+      <node name="people" pkg="gazebo_ros" type="spawn_model"
+        args="-file $(find ur5_single_arm_tufts)/models/123/model.sdf -sdf -model people -x 0.646 -y 0.117 -Y -1.5708" />
+
+      <node name="table1" pkg="gazebo_ros" type="spawn_model"
+        args="-file $(find ur5_single_arm_tufts)/models/table1/model.sdf -sdf -model table1 -x 0.654 -y 0.174 -Y -1.5708" />
+
+      <node name="ur5_base" pkg="gazebo_ros" type="spawn_model"
+        args="-file $(find ur5_single_arm_tufts)/models/ur5_base/model.sdf -sdf -model ur5_base -x 0 -y 0 -z 0" />
+
+      <node name="Jiazi_urdf" pkg="gazebo_ros" type="spawn_model"
+        args="-file $(find ur5_single_arm_tufts)/models/Jiazi_urdf/model.sdf -sdf -model Jiazi_urdf -x 0.350 -y 0.437 -z 0.707919 -Y 0.0" />
+
+      <!-- <node name="Shiguan_urdf" pkg="gazebo_ros" type="spawn_model"
+        args="-file $(find ur5_single_arm_tufts)/models/Shiguan_urdf/model.sdf -sdf -model Shiguan_urdf -x 0 -y 0 -z 0" /> -->
+
+</launch>
