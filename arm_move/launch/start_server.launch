@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>	
+
+	<!--start server -->
+	<node pkg="arm_move" type="cam_to_real" name= "CamtoReal"/>
+    <node pkg="arm_move" type="eye_in_hand" name= "eye_in_hand"/>
+
+</launch>

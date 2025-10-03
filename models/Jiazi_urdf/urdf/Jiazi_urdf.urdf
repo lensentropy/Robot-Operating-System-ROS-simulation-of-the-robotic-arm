@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot
+  name="Jiazi_urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-7.80625564189563E-18 0 0.0252583843509668"
+        rpy="0 0 0" />
+      <mass
+        value="0.587087397270082" />
+      <inertia
+        ixx="0.000307919478763126"
+        ixy="3.37593087498204E-20"
+        ixz="4.83879572590194E-20"
+        iyy="0.00465695966376648"
+        iyz="-2.29493682128789E-20"
+        izz="0.00461182821905803" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jiazi_urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Jiazi_urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+    <gazebo reference="base_link">
+        <material>Gazebo/urGrey</material>
+    </gazebo>
+
+</robot>

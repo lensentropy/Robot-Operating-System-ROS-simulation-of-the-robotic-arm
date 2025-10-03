@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+      <node name="ur_cone" pkg="gazebo_ros" type="spawn_model"
+        args="-file $(find arm_move)/models/ur_cone/model.sdf -sdf -model ur_cone -x 0.636 -y 0.0 -z 0.660 -Y -1.5708" />
+
+      <node name="ur5_base" pkg="gazebo_ros" type="spawn_model"
+        args="-file $(find arm_move)/models/ur5_base/model.sdf -sdf -model ur5_base -x -0.17 -y 0 -z 0" />
+
+</launch>

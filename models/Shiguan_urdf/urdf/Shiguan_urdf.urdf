@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Shiguan_urdf">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-5.12268227360283E-06 1.26069498249115E-06 0.0275021843761458"
+        rpy="0 0 0" />
+      <mass
+        value="0.00127697492555873" />
+      <inertia
+        ixx="7.93890593409025E-07"
+        ixy="-1.03869538991664E-14"
+        ixz="2.3983340963444E-10"
+        iyy="7.93952656094125E-07"
+        iyz="-5.88790284382429E-11"
+        izz="2.82827630375942E-08" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Shiguan_urdf/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Shiguan_urdf/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+</robot>
