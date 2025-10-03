@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+
+      <node name="Shiguan_urdf" pkg="gazebo_ros" type="spawn_model"
+        args="-file $(find ur5_single_arm_tufts)/models/Shiguan_urdf/model.sdf -sdf -model Shiguan_urdf -x 0.215549 -y 0.427150 -z 0.737919" />
+
+</launch>
