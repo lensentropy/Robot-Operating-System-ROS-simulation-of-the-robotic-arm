@@ -1,0 +1,2 @@
+# Robot-Operating-System-ROS-simulation-of-the-robotic-arm
+This is a ROS simulation project for the robotic arm. It is part of the hardware component of the 2025 iGEM team OUC-Haide. The purpose is to ensure the safety of the experimental process and the rationality of the plan before actual operation.
