@@ -1,0 +1,16 @@
+# Smartphone Battery Discharge Model
+# Python Dependencies
+
+# Core scientific computing
+numpy>=1.21.0
+scipy>=1.7.0
+
+# Visualization
+matplotlib>=3.5.0
+
+# Optional: Enhanced statistics
+# pandas>=1.3.0
+
+# Optional: Jupyter notebook support
+# jupyter>=1.0.0
+# ipywidgets>=7.6.0
