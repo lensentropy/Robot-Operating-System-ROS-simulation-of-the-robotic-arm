@@ -1,0 +1,6 @@
+# Battery Modeling Project Requirements
+# High-Fidelity Coupled Electro-Thermal-Aging Model
+
+numpy>=1.21.0
+scipy>=1.7.0
+matplotlib>=3.5.0
