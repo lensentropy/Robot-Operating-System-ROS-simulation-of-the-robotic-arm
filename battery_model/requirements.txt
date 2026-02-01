@@ -1,0 +1,6 @@
+# Battery Model Requirements
+# ==========================
+
+numpy>=1.21.0
+matplotlib>=3.5.0
+scipy>=1.7.0
