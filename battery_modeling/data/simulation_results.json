@@ -1,0 +1,208 @@
+{
+  "battery": {
+    "aging": {
+      "capacity_R2": 0.9915,
+      "resistance_R2": 0.9842,
+      "final_capacity_Ah": 1.3603997559140137,
+      "final_resistance_mOhm": 58.81887476248045
+    },
+    "ocv": {
+      "R2": 0.9927,
+      "K0": 3.4704,
+      "K1": 0.167,
+      "K2": -0.0042,
+      "K3": 0.0573,
+      "K4": -0.0847
+    },
+    "temperature": {
+      "capacity_factor_at_-20C": 0.4080401700881816,
+      "capacity_factor_at_25C": 1.011293446322182,
+      "resistance_factor_at_-10C": 3.2465388387559013,
+      "resistance_factor_at_25C": 0.993300228879074
+    },
+    "dynamic_sim": {
+      "duration_s": 2876.0,
+      "final_SOC": 0.009828980502878578,
+      "final_voltage_V": 2.516953259648361,
+      "temp_rise_C": 1.2896505174364457,
+      "initial_resistance_mOhm": 177.91351406610184,
+      "final_resistance_mOhm": 167.0741438936986
+    }
+  },
+  "smartphone": {
+    "5g": {
+      "power_100Mbps_200m_W": 1.7999999999837142,
+      "power_100Mbps_800m_W": 4.482289936404032,
+      "power_500Mbps_500m_W": 4.882289936404032,
+      "ratio_far_near": 2.4901610758025483
+    },
+    "bluetooth": {
+      "power_7.5ms_mW": 11.855170000000001,
+      "power_100ms_mW": 0.8976940000000001,
+      "power_1000ms_mW": 0.09809440000000001,
+      "power_audio_mW": 25.3528
+    },
+    "background": {
+      "power_1wpm_mW": 28.82784854445869,
+      "power_5wpm_mW": 95.55384270662654,
+      "power_10wpm_mW": 129.97037808098133,
+      "saturation_threshold_wpm": 5.0
+    },
+    "gnss": {
+      "power_tracking_mW": 45.0,
+      "power_acquisition_mW": 115.0,
+      "max_power_during_tunnel_mW": 124.97691134332702,
+      "avg_power_mW": 81.49596196841308
+    },
+    "oled": {
+      "light_theme_500nit_mW": 947.5,
+      "dark_theme_500nit_mW": 282.5,
+      "savings_percent": 70.18469656992085,
+      "ltpo_savings_1hz_vs_60hz_mW": 73.75
+    },
+    "soc": {
+      "power_1GHz_25C_mW": 282.1751666867766,
+      "power_2GHz_25C_mW": 1003.8144743005523,
+      "power_3GHz_25C_mW": 2736.1328124999995,
+      "power_scaling_2x_freq": 3.5574160762871747,
+      "final_temp_gaming_C": 44.742584685476544,
+      "leakage_fraction_hot": 15.493569902628652
+    },
+    "system": {
+      "idle": {
+        "5G": 50.0,
+        "Bluetooth": 0.009250000000000001,
+        "Background": 28.82784854445869,
+        "GNSS": 5.0,
+        "Display": 5.0,
+        "SoC": 201.11974941479846,
+        "Total": 289.9568479592572
+      },
+      "web_browsing": {
+        "5G": 1837.291118226818,
+        "Bluetooth": 0.009250000000000001,
+        "Background": 28.82784854445869,
+        "GNSS": 5.0,
+        "Display": 383.20000000000005,
+        "SoC": 641.649842622442,
+        "Total": 2895.978059393719
+      },
+      "video_streaming": {
+        "5G": 2169.8271245716755,
+        "Bluetooth": 0.009250000000000001,
+        "Background": 28.82784854445869,
+        "GNSS": 5.0,
+        "Display": 710.0,
+        "SoC": 476.3538139827158,
+        "Total": 3390.01803709885
+      },
+      "navigation": {
+        "5G": 1865.3636835406155,
+        "Bluetooth": 0.009250000000000001,
+        "Background": 28.82784854445869,
+        "GNSS": 55.01873998258799,
+        "Display": 823.9999999999999,
+        "SoC": 979.0356396698396,
+        "Total": 3752.255161737502
+      },
+      "gaming": {
+        "5G": 2431.892190667014,
+        "Bluetooth": 0.009250000000000001,
+        "Background": 28.82784854445869,
+        "GNSS": 5.0,
+        "Display": 879.9999999999999,
+        "SoC": 3145.487095346039,
+        "Total": 6491.216384557512
+      }
+    }
+  },
+  "recommendations": {
+    "user_behavior": [
+      {
+        "action": "Enable Dark Mode",
+        "impact": "Reduce display power by up to 70%",
+        "priority": "HIGH",
+        "physics_basis": "OLED pixels emit light individually; dark pixels consume minimal power"
+      },
+      {
+        "action": "Reduce Screen Brightness",
+        "impact": "Display power scales with brightness; 50% reduction saves ~40% display power",
+        "priority": "HIGH",
+        "physics_basis": "P_emit = \u03b2 \u00d7 (L/L_max) \u00d7 APL; linear relationship with brightness"
+      },
+      {
+        "action": "Close Background Apps",
+        "impact": "Background power at high activity: 130mW",
+        "priority": "MEDIUM",
+        "physics_basis": "Tail energy mechanism keeps radio on for 12s after each wake event"
+      },
+      {
+        "action": "Use Wi-Fi Over Cellular When Possible",
+        "impact": "5G power increases 2.5x at cell edge",
+        "priority": "HIGH",
+        "physics_basis": "Link budget: P_tx \u221d d^3.8 \u00d7 2^(R/B), exponential with distance"
+      }
+    ],
+    "system_settings": [
+      {
+        "action": "Enable Adaptive Refresh Rate (LTPO)",
+        "impact": "Save 74mW in static screens",
+        "priority": "MEDIUM",
+        "physics_basis": "Driver power P_drv = C_eff \u00d7 V_dd\u00b2 \u00d7 f; linear with refresh rate"
+      },
+      {
+        "action": "Disable Location Services When Not Needed",
+        "impact": "GNSS acquisition mode: 115mW vs tracking: 45mW",
+        "priority": "MEDIUM",
+        "physics_basis": "Acquisition requires full-band scanning; tracking only maintains lock"
+      },
+      {
+        "action": "Enable Power Saver Mode for Light Tasks",
+        "impact": "CPU at 1GHz: 282mW vs 3GHz: 2736mW",
+        "priority": "HIGH",
+        "physics_basis": "DVFS: P_dyn \u221d f\u00b3; cubic scaling with frequency"
+      }
+    ],
+    "os_strategies": [
+      {
+        "action": "Align Wake Events (Opportunistic Batching)",
+        "impact": "Prevents tail energy overlap; threshold at 5.0 wakes/min",
+        "priority": "HIGH",
+        "physics_basis": "P_bg = P_leak + (P_idle - P_leak) \u00d7 (1 - e^(-\u03bb\u03c4_tail))"
+      },
+      {
+        "action": "Implement Thermal-Aware CPU Scheduling",
+        "impact": "Leakage at high temp: 15% of total power",
+        "priority": "MEDIUM",
+        "physics_basis": "I_leak \u221d T\u00b2 \u00d7 exp(\u03b6\u00d7(T-T_ref)); exponential thermal dependence"
+      },
+      {
+        "action": "Predictive 5G Connection Management",
+        "impact": "Disable 5G modem in weak signal areas to prevent power explosion",
+        "priority": "HIGH",
+        "physics_basis": "P_5G = P_static + \u03b1\u00d7R + (\u039b_env\u00d7d^n\u00d7(2^(R/B)-1))/\u03b7_PA"
+      }
+    ],
+    "environmental": [
+      {
+        "action": "Avoid Extreme Cold Operation",
+        "impact": "Capacity at -20\u00b0C: 41%; Resistance 2.5x higher at -10\u00b0C",
+        "priority": "HIGH",
+        "physics_basis": "Arrhenius: ion conductivity decreases exponentially with temperature"
+      },
+      {
+        "action": "Allow Device to Warm Up in Cold Weather",
+        "impact": "Self-heating effect: internal resistance decreases as battery warms",
+        "priority": "MEDIUM",
+        "physics_basis": "Bernardi heating: Q_gen = I\u00b2R + I\u00d7T\u00d7(\u2202V_OCV/\u2202T)"
+      },
+      {
+        "action": "Avoid High-Temperature Charging",
+        "impact": "Battery capacity degrades faster at elevated temperatures",
+        "priority": "HIGH",
+        "physics_basis": "SEI film growth accelerates with temperature; Q_max degrades exponentially"
+      }
+    ]
+  },
+  "timestamp": "2026-02-01T12:07:27.452685"
+}
