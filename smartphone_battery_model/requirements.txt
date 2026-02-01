@@ -1,0 +1,13 @@
+# Smartphone Battery Discharge Model Dependencies
+# 智能手机电池放电模型依赖
+
+# Core Scientific Computing
+numpy>=1.21.0
+scipy>=1.7.0
+
+# Visualization
+matplotlib>=3.5.0
+
+# Optional: Enhanced visualization
+# seaborn>=0.11.0
+# plotly>=5.0.0
